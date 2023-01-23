@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		681D33AB2979EC4300394B4D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D33AA2979EC4300394B4D /* Data.swift */; };
+		68349FC2297B2E2F006BB993 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68349FC1297B2E2F006BB993 /* JavaScriptCore.framework */; };
+		683AE4B629795DE4007B220F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683AE4B529795DE4007B220F /* String.swift */; };
+		683AE4B92979757B007B220F /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 683AE4B82979757B007B220F /* CryptoSwift */; };
+		688C67B629770EE5002B03C3 /* ProximityReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688C67B529770EE5002B03C3 /* ProximityReader.framework */; };
+		688C67B829770F7F002B03C3 /* ProximityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688C67B729770F7F002B03C3 /* ProximityHelper.swift */; };
+		688D477E2976BEF200577010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D477D2976BEF200577010 /* AppDelegate.swift */; };
+		688D47802976BEF200577010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D477F2976BEF200577010 /* SceneDelegate.swift */; };
+		688D47822976BEF200577010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D47812976BEF200577010 /* ViewController.swift */; };
+		688D47852976BEF200577010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688D47832976BEF200577010 /* Main.storyboard */; };
+		688D47872976BEF500577010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688D47862976BEF500577010 /* Assets.xcassets */; };
+		688D478A2976BEF500577010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688D47882976BEF500577010 /* LaunchScreen.storyboard */; };
+		688D47952976BEF600577010 /* Spotlight_ePOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D47942976BEF600577010 /* Spotlight_ePOSTests.swift */; };
+		688D479F2976BEF600577010 /* Spotlight_ePOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D479E2976BEF600577010 /* Spotlight_ePOSUITests.swift */; };
+		688D47A12976BEF600577010 /* Spotlight_ePOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D47A02976BEF600577010 /* Spotlight_ePOSUITestsLaunchTests.swift */; };
+		68D1201B297A6126001AA0F8 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1201A297A6126001AA0F8 /* Numeric.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		688D47912976BEF600577010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 688D47722976BEF200577010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 688D47792976BEF200577010;
+			remoteInfo = "Spotlight ePOS";
+		};
+		688D479B2976BEF600577010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 688D47722976BEF200577010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 688D47792976BEF200577010;
+			remoteInfo = "Spotlight ePOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		681D33AA2979EC4300394B4D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		68349FC1297B2E2F006BB993 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		683AE4B529795DE4007B220F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		688C67B529770EE5002B03C3 /* ProximityReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProximityReader.framework; path = System/Library/Frameworks/ProximityReader.framework; sourceTree = SDKROOT; };
+		688C67B729770F7F002B03C3 /* ProximityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityHelper.swift; sourceTree = "<group>"; };
+		688C67E72978253D002B03C3 /* Spotlight ePOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Spotlight ePOS.entitlements"; sourceTree = "<group>"; };
+		688D477A2976BEF200577010 /* Spotlight ePOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotlight ePOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		688D477D2976BEF200577010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		688D477F2976BEF200577010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		688D47812976BEF200577010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		688D47842976BEF200577010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		688D47862976BEF500577010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		688D47892976BEF500577010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		688D478B2976BEF500577010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688D47902976BEF600577010 /* Spotlight ePOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spotlight ePOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		688D47942976BEF600577010 /* Spotlight_ePOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight_ePOSTests.swift; sourceTree = "<group>"; };
+		688D479A2976BEF600577010 /* Spotlight ePOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spotlight ePOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		688D479E2976BEF600577010 /* Spotlight_ePOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight_ePOSUITests.swift; sourceTree = "<group>"; };
+		688D47A02976BEF600577010 /* Spotlight_ePOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotlight_ePOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68D1201A297A6126001AA0F8 /* Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		688D47772976BEF200577010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688C67B629770EE5002B03C3 /* ProximityReader.framework in Frameworks */,
+				683AE4B92979757B007B220F /* CryptoSwift in Frameworks */,
+				68349FC2297B2E2F006BB993 /* JavaScriptCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688D478D2976BEF600577010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688D47972976BEF600577010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		683AE4B429795DCC007B220F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				683AE4B529795DE4007B220F /* String.swift */,
+				681D33AA2979EC4300394B4D /* Data.swift */,
+				68D1201A297A6126001AA0F8 /* Numeric.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		688C67B429770EE4002B03C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68349FC1297B2E2F006BB993 /* JavaScriptCore.framework */,
+				688C67B529770EE5002B03C3 /* ProximityReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		688D47712976BEF200577010 = {
+			isa = PBXGroup;
+			children = (
+				688D477C2976BEF200577010 /* Spotlight ePOS */,
+				688D47932976BEF600577010 /* Spotlight ePOSTests */,
+				688D479D2976BEF600577010 /* Spotlight ePOSUITests */,
+				688D477B2976BEF200577010 /* Products */,
+				688C67B429770EE4002B03C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		688D477B2976BEF200577010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				688D477A2976BEF200577010 /* Spotlight ePOS.app */,
+				688D47902976BEF600577010 /* Spotlight ePOSTests.xctest */,
+				688D479A2976BEF600577010 /* Spotlight ePOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		688D477C2976BEF200577010 /* Spotlight ePOS */ = {
+			isa = PBXGroup;
+			children = (
+				683AE4B429795DCC007B220F /* Extensions */,
+				688C67E72978253D002B03C3 /* Spotlight ePOS.entitlements */,
+				688D477D2976BEF200577010 /* AppDelegate.swift */,
+				688D477F2976BEF200577010 /* SceneDelegate.swift */,
+				688D47812976BEF200577010 /* ViewController.swift */,
+				688D47832976BEF200577010 /* Main.storyboard */,
+				688D47862976BEF500577010 /* Assets.xcassets */,
+				688D47882976BEF500577010 /* LaunchScreen.storyboard */,
+				688D478B2976BEF500577010 /* Info.plist */,
+				688C67B729770F7F002B03C3 /* ProximityHelper.swift */,
+			);
+			path = "Spotlight ePOS";
+			sourceTree = "<group>";
+		};
+		688D47932976BEF600577010 /* Spotlight ePOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				688D47942976BEF600577010 /* Spotlight_ePOSTests.swift */,
+			);
+			path = "Spotlight ePOSTests";
+			sourceTree = "<group>";
+		};
+		688D479D2976BEF600577010 /* Spotlight ePOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				688D479E2976BEF600577010 /* Spotlight_ePOSUITests.swift */,
+				688D47A02976BEF600577010 /* Spotlight_ePOSUITestsLaunchTests.swift */,
+			);
+			path = "Spotlight ePOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		688D47792976BEF200577010 /* Spotlight ePOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688D47A42976BEF600577010 /* Build configuration list for PBXNativeTarget "Spotlight ePOS" */;
+			buildPhases = (
+				688D47762976BEF200577010 /* Sources */,
+				688D47772976BEF200577010 /* Frameworks */,
+				688D47782976BEF200577010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spotlight ePOS";
+			packageProductDependencies = (
+				683AE4B82979757B007B220F /* CryptoSwift */,
+			);
+			productName = "Spotlight ePOS";
+			productReference = 688D477A2976BEF200577010 /* Spotlight ePOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		688D478F2976BEF600577010 /* Spotlight ePOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688D47A72976BEF600577010 /* Build configuration list for PBXNativeTarget "Spotlight ePOSTests" */;
+			buildPhases = (
+				688D478C2976BEF600577010 /* Sources */,
+				688D478D2976BEF600577010 /* Frameworks */,
+				688D478E2976BEF600577010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				688D47922976BEF600577010 /* PBXTargetDependency */,
+			);
+			name = "Spotlight ePOSTests";
+			productName = "Spotlight ePOSTests";
+			productReference = 688D47902976BEF600577010 /* Spotlight ePOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		688D47992976BEF600577010 /* Spotlight ePOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688D47AA2976BEF600577010 /* Build configuration list for PBXNativeTarget "Spotlight ePOSUITests" */;
+			buildPhases = (
+				688D47962976BEF600577010 /* Sources */,
+				688D47972976BEF600577010 /* Frameworks */,
+				688D47982976BEF600577010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				688D479C2976BEF600577010 /* PBXTargetDependency */,
+			);
+			name = "Spotlight ePOSUITests";
+			productName = "Spotlight ePOSUITests";
+			productReference = 688D479A2976BEF600577010 /* Spotlight ePOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		688D47722976BEF200577010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					688D47792976BEF200577010 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					688D478F2976BEF600577010 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 688D47792976BEF200577010;
+					};
+					688D47992976BEF600577010 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 688D47792976BEF200577010;
+					};
+				};
+			};
+			buildConfigurationList = 688D47752976BEF200577010 /* Build configuration list for PBXProject "Spotlight ePOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 688D47712976BEF200577010;
+			packageReferences = (
+				68208AB22976CB51001CE3A2 /* XCRemoteSwiftPackageReference "adyen-terminal-api-ios" */,
+				68208AB52976CDAD001CE3A2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				68208AB82976D535001CE3A2 /* XCRemoteSwiftPackageReference "adyen-ios" */,
+				683AE4B72979757B007B220F /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
+			productRefGroup = 688D477B2976BEF200577010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				688D47792976BEF200577010 /* Spotlight ePOS */,
+				688D478F2976BEF600577010 /* Spotlight ePOSTests */,
+				688D47992976BEF600577010 /* Spotlight ePOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		688D47782976BEF200577010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688D478A2976BEF500577010 /* LaunchScreen.storyboard in Resources */,
+				688D47872976BEF500577010 /* Assets.xcassets in Resources */,
+				688D47852976BEF200577010 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688D478E2976BEF600577010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688D47982976BEF600577010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		688D47762976BEF200577010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681D33AB2979EC4300394B4D /* Data.swift in Sources */,
+				688D47822976BEF200577010 /* ViewController.swift in Sources */,
+				688C67B829770F7F002B03C3 /* ProximityHelper.swift in Sources */,
+				68D1201B297A6126001AA0F8 /* Numeric.swift in Sources */,
+				683AE4B629795DE4007B220F /* String.swift in Sources */,
+				688D477E2976BEF200577010 /* AppDelegate.swift in Sources */,
+				688D47802976BEF200577010 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688D478C2976BEF600577010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688D47952976BEF600577010 /* Spotlight_ePOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688D47962976BEF600577010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688D47A12976BEF600577010 /* Spotlight_ePOSUITestsLaunchTests.swift in Sources */,
+				688D479F2976BEF600577010 /* Spotlight_ePOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		688D47922976BEF600577010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 688D47792976BEF200577010 /* Spotlight ePOS */;
+			targetProxy = 688D47912976BEF600577010 /* PBXContainerItemProxy */;
+		};
+		688D479C2976BEF600577010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 688D47792976BEF200577010 /* Spotlight ePOS */;
+			targetProxy = 688D479B2976BEF600577010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		688D47832976BEF200577010 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				688D47842976BEF200577010 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		688D47882976BEF500577010 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				688D47892976BEF500577010 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		688D47A22976BEF600577010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		688D47A32976BEF600577010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		688D47A52976BEF600577010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Spotlight ePOS/Spotlight ePOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B7J9S47LWE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotlight ePOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spotlightepaypos.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Spotlight ePOS dev 2023";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		688D47A62976BEF600577010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Spotlight ePOS/Spotlight ePOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B7J9S47LWE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spotlight ePOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spotlightepaypos.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Spotlight ePOS dev 2023";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		688D47A82976BEF600577010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spotlightepos.ios.Spotlight-ePOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotlight ePOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spotlight ePOS";
+			};
+			name = Debug;
+		};
+		688D47A92976BEF600577010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spotlightepos.ios.Spotlight-ePOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spotlight ePOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spotlight ePOS";
+			};
+			name = Release;
+		};
+		688D47AB2976BEF600577010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spotlightepos.ios.Spotlight-ePOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Spotlight ePOS";
+			};
+			name = Debug;
+		};
+		688D47AC2976BEF600577010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spotlightepos.ios.Spotlight-ePOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Spotlight ePOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		688D47752976BEF200577010 /* Build configuration list for PBXProject "Spotlight ePOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688D47A22976BEF600577010 /* Debug */,
+				688D47A32976BEF600577010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688D47A42976BEF600577010 /* Build configuration list for PBXNativeTarget "Spotlight ePOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688D47A52976BEF600577010 /* Debug */,
+				688D47A62976BEF600577010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688D47A72976BEF600577010 /* Build configuration list for PBXNativeTarget "Spotlight ePOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688D47A82976BEF600577010 /* Debug */,
+				688D47A92976BEF600577010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688D47AA2976BEF600577010 /* Build configuration list for PBXNativeTarget "Spotlight ePOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688D47AB2976BEF600577010 /* Debug */,
+				688D47AC2976BEF600577010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68208AB22976CB51001CE3A2 /* XCRemoteSwiftPackageReference "adyen-terminal-api-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Adyen/adyen-terminal-api-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		68208AB52976CDAD001CE3A2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		68208AB82976D535001CE3A2 /* XCRemoteSwiftPackageReference "adyen-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Adyen/adyen-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		683AE4B72979757B007B220F /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		683AE4B82979757B007B220F /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 683AE4B72979757B007B220F /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 688D47722976BEF200577010 /* Project object */;
+}
