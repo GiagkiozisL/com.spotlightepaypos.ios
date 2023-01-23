@@ -11,6 +11,8 @@
 		68349FC2297B2E2F006BB993 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68349FC1297B2E2F006BB993 /* JavaScriptCore.framework */; };
 		683AE4B629795DE4007B220F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683AE4B529795DE4007B220F /* String.swift */; };
 		683AE4B92979757B007B220F /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 683AE4B82979757B007B220F /* CryptoSwift */; };
+		6885A63D297E9E0500F59C05 /* CryptoAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6885A63C297E9E0500F59C05 /* CryptoAnalyzer.swift */; };
+		6885A63F297E9FE400F59C05 /* Crypto.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 6885A63E297E9FE400F59C05 /* Crypto.bundle.js */; };
 		688C67B629770EE5002B03C3 /* ProximityReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688C67B529770EE5002B03C3 /* ProximityReader.framework */; };
 		688C67B829770F7F002B03C3 /* ProximityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688C67B729770F7F002B03C3 /* ProximityHelper.swift */; };
 		688D477E2976BEF200577010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D477D2976BEF200577010 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 		681D33AA2979EC4300394B4D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		68349FC1297B2E2F006BB993 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		683AE4B529795DE4007B220F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6885A63C297E9E0500F59C05 /* CryptoAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAnalyzer.swift; sourceTree = "<group>"; };
+		6885A63E297E9FE400F59C05 /* Crypto.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Crypto.bundle.js; path = dist/Crypto.bundle.js; sourceTree = "<group>"; };
 		688C67B529770EE5002B03C3 /* ProximityReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProximityReader.framework; path = System/Library/Frameworks/ProximityReader.framework; sourceTree = SDKROOT; };
 		688C67B729770F7F002B03C3 /* ProximityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityHelper.swift; sourceTree = "<group>"; };
 		688C67E72978253D002B03C3 /* Spotlight ePOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Spotlight ePOS.entitlements"; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6885A63A297E967B00F59C05 /* JS */ = {
+			isa = PBXGroup;
+			children = (
+				6885A63E297E9FE400F59C05 /* Crypto.bundle.js */,
+				6885A63C297E9E0500F59C05 /* CryptoAnalyzer.swift */,
+			);
+			path = JS;
+			sourceTree = "<group>";
+		};
 		688C67B429770EE4002B03C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 		688D477C2976BEF200577010 /* Spotlight ePOS */ = {
 			isa = PBXGroup;
 			children = (
+				6885A63A297E967B00F59C05 /* JS */,
 				683AE4B429795DCC007B220F /* Extensions */,
 				688C67E72978253D002B03C3 /* Spotlight ePOS.entitlements */,
 				688D477D2976BEF200577010 /* AppDelegate.swift */,
@@ -280,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6885A63F297E9FE400F59C05 /* Crypto.bundle.js in Resources */,
 				688D478A2976BEF500577010 /* LaunchScreen.storyboard in Resources */,
 				688D47872976BEF500577010 /* Assets.xcassets in Resources */,
 				688D47852976BEF200577010 /* Main.storyboard in Resources */,
@@ -313,6 +328,7 @@
 				68D1201B297A6126001AA0F8 /* Numeric.swift in Sources */,
 				683AE4B629795DE4007B220F /* String.swift in Sources */,
 				688D477E2976BEF200577010 /* AppDelegate.swift in Sources */,
+				6885A63D297E9E0500F59C05 /* CryptoAnalyzer.swift in Sources */,
 				688D47802976BEF200577010 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

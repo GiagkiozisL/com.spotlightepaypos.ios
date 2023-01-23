@@ -1,14 +1,15 @@
-const CryptoJS = require('crypto.js')
+const Crypto = require('crypto-js')
 
 export class Analyzer {
-    static analyze(phrase) {
+    static analyze(message, key) {
         // Make sure nativeLog is defined and is a function
         if (typeof nativeLog === 'function') {
-            nativeLog(`Analyzing '${phrase}'`)
+            nativeLog(`Analyzing: '${message}' with key: 'r_u_looking_4_my_key?'`)
         }
-        
-        let sentiment = new CryptoJSt()
-        let result = sentiment.analyze(phrase)
-        return result['score']
+
+        let hmacOut = Crypto.HmacSHA256(message, Crypto.MD5(key)); 
+        nativeLog(`Analyzing hash: '${hmacOut}'`)
+        return hmacOut
     }
 }
+
