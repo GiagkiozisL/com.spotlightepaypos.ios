@@ -103,6 +103,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6885A63A297E967B00F59C05 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		688C67B429770EE4002B03C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +143,7 @@
 		688D477C2976BEF200577010 /* Spotlight ePOS */ = {
 			isa = PBXGroup;
 			children = (
+				6885A63A297E967B00F59C05 /* New Group */,
 				683AE4B429795DCC007B220F /* Extensions */,
 				688C67E72978253D002B03C3 /* Spotlight ePOS.entitlements */,
 				688D477D2976BEF200577010 /* AppDelegate.swift */,
