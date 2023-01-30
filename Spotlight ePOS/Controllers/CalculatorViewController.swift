@@ -10,18 +10,18 @@ import UIKit
 class CalculatorViewController: UIViewController {
 
     
+    @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var amountTextField: UITextField!
     
     @IBOutlet weak var chargeBtn: UIButton!
-    
+    var payload: String = ""
     var order: Order?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        parseOrder()
         initUI()
-        
-        print("order is: \(String(describing: order?.orderId))")
     }
     
     func initUI() {
@@ -33,6 +33,16 @@ class CalculatorViewController: UIViewController {
         amountTextField.frame.size.width = amountTextField.intrinsicContentSize.width
         amountTextField.text = String(order?.amount ?? 0)
         
-        chargeBtn.setTitle("Charge \(order?.amount ?? 0) AED", for: .normal)
+        chargeBtn.setTitle("Charge \(order?.amount ?? 0) \(order?.currency ?? "")", for: .normal)
+        currencyLabel.text = order?.currency ?? ""
+    }
+    
+    func parseOrder() {
+        do {
+            let data: Data = payload.base64Decoded()
+            order = try JSONDecoder().decode(Order.self, from: data)
+        } catch {
+            print("error on decoding base64 of payload \(error)")
+        }
     }
 }

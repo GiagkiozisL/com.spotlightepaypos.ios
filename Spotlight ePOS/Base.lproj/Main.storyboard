@@ -284,11 +284,12 @@
                     <connections>
                         <outlet property="amountTextField" destination="Xhs-4x-EXa" id="qUW-vE-EwJ"/>
                         <outlet property="chargeBtn" destination="2cA-JF-pxF" id="DWI-iz-iTo"/>
+                        <outlet property="currencyLabel" destination="0PA-Ns-kgY" id="2l3-e0-pcM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2697.1014492753625" y="-731.25"/>
+            <point key="canvasLocation" x="2504" y="-731"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="D3p-jE-LbZ">

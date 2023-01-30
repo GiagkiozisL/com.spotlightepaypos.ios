@@ -10,12 +10,13 @@ import Foundation
 struct Order : Codable {
     
     var orderId: String = ""
-    var amount: Int = 0
+    var amount: Int = 2
     var storeId: String = ""
     var key: String = ""
+    var currency: String = ""
     
     init() {
-        amount = 245
+        
     }
     
     

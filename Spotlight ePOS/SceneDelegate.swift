@@ -11,6 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
+    var payload = "ewogICJvcmRlcklkIjogIjQ2N2VlY2M2LWUzYWMtNGRjNy05NDE4LWUwMzhkMzQ5MWY3OSIsCiAgImFtb3VudCI6IDEwMCwKICAic3RvcmVJZCI6ICI0MDAxIiwKICAia2V5IjogIlZlcnlTZWNyZXQiLAogICJjdXJyZW5jeSI6ICJBRUQiCn0="
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -27,7 +28,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let url = urlContext.url
             print("source application = \(sendingAppID ?? "Unknown")")
             print("url = \(url)")
-            
         }
     }
     
@@ -44,7 +44,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 return
             }
             
-            let payload = url.valueOf("payload") ?? ""
+            payload = url.valueOf("payload") ?? ""
             openIntroController(payload)
         }
     }

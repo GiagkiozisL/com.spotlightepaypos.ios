@@ -10,32 +10,24 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
-    var payload: String = ""
+    var payload: String = "ewogICJvcmRlcklkIjogIjQ2N2VlY2M2LWUzYWMtNGRjNy05NDE4LWUwMzhkMzQ5MWY3OSIsCiAgImFtb3VudCI6IDEwMCwKICAic3RvcmVJZCI6ICI0MDAxIiwKICAia2V5IjogIlZlcnlTZWNyZXQiLAogICJjdXJyZW5jeSI6ICJFVVIiCn0="
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         Task {
             try await Task.sleep(nanoseconds: 5_000_000) // 5 secs
-            
-            var order = Order()
-            do {
-                let data: Data = payload.base64Decoded()
-                order = try JSONDecoder().decode(Order.self, from: data)
-            } catch {
-                print("error on decoding base64 of payload \(error)")
-            }
-            showCalculatorVC(order)
+            showCalculatorVC(payload)
         }
     }
     
-    func showCalculatorVC(_ order: Order) {
+    func showCalculatorVC(_ data: String) {
         
         // push view controller but animate modally
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "CalculatorViewController") as! CalculatorViewController
-        vc.order = order
+        
+        vc.payload = data
         let navigationController = self.navigationController
         
         let transition = CATransition()
@@ -46,5 +38,4 @@ class IntroViewController: UIViewController {
         navigationController?.view.layer.add(transition, forKey: nil)
         navigationController?.pushViewController(vc, animated: false)
     }
-
 }
