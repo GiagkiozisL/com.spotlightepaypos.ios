@@ -25,4 +25,5 @@ extension Data {
     }
     
     var array: [UInt8] { return Array(self) }
+
 }

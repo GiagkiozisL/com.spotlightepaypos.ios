@@ -26,11 +26,15 @@ extension String {
     }
     
     //: ### Base64 decoding a string
-    func base64Decoded() -> String? {
+    func base64DecodedStr() -> String? {
         if let data = Data(base64Encoded: self, options: .ignoreUnknownCharacters) {
             return String(data: data, encoding: .utf8)
         }
         return nil
+    }
+    
+    func base64Decoded() -> Data {
+        return Data(base64Encoded: self, options: .ignoreUnknownCharacters)!
     }
     
     func hmac(key: String) -> String {
@@ -40,22 +44,6 @@ extension String {
         return data.base64EncodedString(options: Data.Base64EncodingOptions(rawValue: 0))
     }
     
-//    func hmac(algorithm: CryptoAlgorithm, key: String) -> String {
-//        let str = self.cString(using: String.Encoding.utf8)
-//        let strLen = Int(self.lengthOfBytes(using: String.Encoding.utf8))
-//        let digestLen = algorithm.digestLength
-//        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
-//        let keyStr = key.cString(using: String.Encoding.utf16)
-//        let keyLen = Int(key.lengthOfBytes(using: String.Encoding.utf16))
-//        
-//        CCHmac(algorithm.HMACAlgorithm, keyStr!, keyLen, str!, strLen, result)
-//        
-//        let digest = stringFromResult(result: result, length: digestLen)
-//        
-//        result.deallocate()
-//        
-//        return digest
-//    }
     
     private func stringFromResult(result: UnsafeMutablePointer<CUnsignedChar>, length: Int) -> String {
         let hash = NSMutableString()
