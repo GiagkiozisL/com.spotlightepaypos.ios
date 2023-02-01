@@ -15,7 +15,6 @@ import WebKit
 
 import zlib
 
-
 class ViewController: UIViewController {
     
     let server_key = "AQEyhmfuXNWTK0Qc+iSDgmssq+2cQJ99IqBiXWlax2ubvTAazOe8b/FQbjuLbEhrxjINpPUQwV1bDb7kfNy1WIxIIkxgBw==-cj4dyNHIAGurMhJLX4Hduh3YgH4g5hIJyk5JsY7Wz7g=-2bvJ+AuX5u9zWX#T"

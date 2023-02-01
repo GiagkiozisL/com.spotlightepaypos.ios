@@ -35,21 +35,21 @@ class ProximityHelper {
         guard let reader = self.reader else {
             return
         }
-        let events = reader.events
-        do {
-            Task {
-                for await event in events {
-                    if case .updateProgress = event {
-                        // Make sure you update the user interface (if you have one)
-                        // using the progress value.
-                    }
-                }
-            }
-            session = try await reader.prepare(using: token)
-        } catch {
-            // Handle any errors that occur during preparation
-            // (see PaymentCardReaderError).
-        }
+//        let events = reader.events
+//        do {
+//            Task {
+//                for await event in events {
+//                    if case .updateProgress = event {
+//                        // Make sure you update the user interface (if you have one)
+//                        // using the progress value.
+//                    }
+//                }
+//            }
+//            session = try await reader.prepare(using: token)
+//        } catch {
+//            // Handle any errors that occur during preparation
+//            // (see PaymentCardReaderError).
+//        }
     }
     
     public func readCard(for amount: Decimal) async throws {
@@ -59,18 +59,18 @@ class ProximityHelper {
         guard let reader = self.reader else {
             return
         }
-        let events = reader.events
-        do {
-            Task {
-                for await event in events {
-                    // Handle events that happen while the sheet is up.
-                }
-            }
-            let result = try await session?.readPaymentCard(request)
-            // Send result.paymentCardData to your payment service provider.
-        } catch {
-            // Handle any errors that occur during read
-            // (see PaymentCardReaderSession.ReadError).
-        }
+//        let events = reader.events
+//        do {
+//            Task {
+//                for await event in events {
+//                    // Handle events that happen while the sheet is up.
+//                }
+//            }
+//            let result = try await session?.readPaymentCard(request)
+//            // Send result.paymentCardData to your payment service provider.
+//        } catch {
+//            // Handle any errors that occur during read
+//            // (see PaymentCardReaderSession.ReadError).
+//        }
     }
 }

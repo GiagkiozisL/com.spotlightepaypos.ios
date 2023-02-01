@@ -11,7 +11,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    var payload = "ewogICJvcmRlcklkIjogIjQ2N2VlY2M2LWUzYWMtNGRjNy05NDE4LWUwMzhkMzQ5MWY3OSIsCiAgImFtb3VudCI6IDEwMCwKICAic3RvcmVJZCI6ICI0MDAxIiwKICAia2V5IjogIlZlcnlTZWNyZXQiLAogICJjdXJyZW5jeSI6ICJBRUQiCn0="
+    var payload = "ewogICJvcmRlcklkIjogIjQ2N2VlY2M2LTAwMDAtNGRjNy05NDE4LWUwMzhkMzQ5MWY3OSIsCiAgImFtb3VudCI6IDQ1OTksCiAgInN0b3JlSWQiOiAiNDAwMSIsCiAgImtleSI6ICJWZXJ5U2VjcmV0IiwKICAiY3VycmVuY3kiOiAiRVVSIgp9"
+//    var payload = "ewogICJvcmRlcklkIjogIjQ2N2VlY2M2LWUzYWMtNGRjNy05NDE4LWUwMzhkMzQ5MWY3OSIsCiAgImFtb3VudCI6IDEwMCwKICAic3RvcmVJZCI6ICI0MDAxIiwKICAia2V5IjogIlZlcnlTZWNyZXQiLAogICJjdXJyZW5jeSI6ICJBRUQiCn0="
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
