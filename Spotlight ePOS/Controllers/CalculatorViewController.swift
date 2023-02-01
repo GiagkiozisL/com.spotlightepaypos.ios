@@ -16,6 +16,9 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     @IBOutlet weak var chargeBtn: UIButton!
+    
+    @IBOutlet weak var resultImageView: UIImageView!
+    
     var payload: String = ""
     var order: Order?
     
@@ -40,10 +43,12 @@ class CalculatorViewController: UIViewController {
         amountTextField.textColor = .black
         amountTextField.isUserInteractionEnabled = false
         amountTextField.frame.size.width = amountTextField.intrinsicContentSize.width
-        amountTextField.text = String(order?.amount ?? 0)
+        let amountDec: Double = Double((order?.amount ?? 0) / 100)
+        let formattedPrice = String(format: "%.2f", amountDec)
+        amountTextField.text = formattedPrice
         
-        chargeBtn.setTitle("Charge \(order?.amount ?? 0) \(order?.currency ?? "")", for: .normal)
-        currencyLabel.text = order?.currency ?? ""
+        chargeBtn.setTitle("Charge \(formattedPrice) \(order?.currency ?? "")", for: .normal)
+        currencyLabel.text = order?.currency ?? "yo"
     }
     
     func parseOrder() {
@@ -68,7 +73,14 @@ class CalculatorViewController: UIViewController {
         
         viewModel.$paymentSent
             .sink { paymentSent in
-                
+                self.resultImageView.isHidden = !paymentSent
+                if (paymentSent) {
+                    self.chargeBtn.isEnabled = false
+                    Task {
+                        try await Task.sleep(nanoseconds: 3_000_000_000)
+                        self.dismiss(animated: true)
+                    }
+                }
             }.store(in: &subscriptions)
     }
     
