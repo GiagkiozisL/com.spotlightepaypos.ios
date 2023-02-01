@@ -23,48 +23,11 @@ struct DataService {
     init() {
         
         let serverTrustPolicies: [String: ServerTrustEvaluating] = [
-                "demo.neopayments.gr": DisabledTrustEvaluator()// .disableEvaluation
-            ]
+                "demo.neopayments.gr": DisabledTrustEvaluator()]
 
         let manager = ServerTrustManager(evaluators: serverTrustPolicies)
         session = Session(delegate: CustomSessionDelegate(), serverTrustManager: manager)
-
-//        let cert = PKCS12.init(mainBundleResource: "nsf-api-spotlight.test", resourceType: "pfx", password: "nsfSp0tL!ght");
-        
-//        session.delegate.sessionDidReceiveChallenge = { session, challenge in
-//                if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodClientCertificate {
-//                    return (URLSession.AuthChallengeDisposition.useCredential, self.cert.urlCredential());
-//                }
-//                if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
-//                    return (URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!));
-//                }
-//                return (URLSession.AuthChallengeDisposition.performDefaultHandling, Optional.none);
-//            }
     }
-    
-//    init() {
-//        print("initializing ssl \(Bundle.main.af.certificates)")
-//
-//        // way 1
-//        let evaluators: [String: ServerTrustEvaluating] = [
-//            "demo.neopayments.gr": PublicKeysTrustEvaluator()
-//        ]
-////
-////        let manager = ServerTrustManager(evaluators: evaluators)
-////        session = Session(serverTrustManager: manager)
-//
-//        // way 2
-////        let evaluators: [String: ServerTrustEvaluating] = [
-////            "demo.neopayments.gr": PinnedCertificatesTrustEvaluator(
-////                certificates: Bundle.main.af.certificates)
-//////            ,
-//////                performDefaultValidation: false,
-//////                validateHost: false)
-////        ]
-//
-//        let manager = ServerTrustManager(evaluators: evaluators) //evaluators: evaluators)
-//        session = Session(serverTrustManager: manager)
-//    }
     
     // MARK: - Services
     func postCreateReceipt(with receipt: PaymentReceipt, completion: @escaping (Bool, String?) -> ()) {
@@ -74,10 +37,10 @@ struct DataService {
             print(response)
             switch (response.result) {
             case .success:
-                print("request succeded \(response.response?.statusCode)")
+                print("request succeded \(String(describing: response.response?.statusCode))")
                 if let data = response.data {
                     let json = String(data: data, encoding: String.Encoding.utf8)
-                    print("request Response: \(json)")
+                    print("request Response: \(String(describing: json))")
                 }
                 completion(true, "")
                 break
